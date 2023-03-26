@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>华丽的网页界面</title>
+    <style>
+      /* 设置页面样式 */
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url('tu.jpg');
+        background-size: cover;
+        font-family: 'Arial Black', sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 80px;
+        margin-top: 25vh;
+        margin-bottom: 0;
+        background: -webkit-linear-gradient(#ff7f50, #ff1493);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.2s ease-in-out;
+      }
+      h1:hover {
+        transform: scale(1.1);
+        text-shadow: 0px 0px 20px #ff1493;
+      }
+      p {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 50px;
+        color: #fff;
+        text-shadow: 1px 1px #333;
+      }
+      .quote {
+        display: block;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 50px;
+        text-shadow: 1px 1px #333;
+      }
+      .quote:before {
+        content: "\201C";
+        font-size: 72px;
+        margin-right: 20px;
+      }
+      .quote:after {
+        content: "\201D";
+        font-size: 72px;
+        margin-left: 20px;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        background-color: rgba(128, 128, 128, 0.5);
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        padding: 20px 40px;
+        font-size: 24px;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      button:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px #ff1493;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>主标签</h1>
+    <p>这是一段华丽的网页界面</p>
+    <span class="quote">"一句引用"</span>
+    <div class="buttons">
+      <button onclick="location.href='https://www.example.com/page1.html'">按钮1</button>
+      <button onclick="location.href='https://www.example.com/page2.html'">按钮2</button>
+      <button onclick="location.href='https://www.example.com/page3.html'">按钮3</button>
+      <button onclick="location.href='https://www.example.com/page4.html'">按钮4</button>
+    </div>
+  </body>
+</html>
+
